@@ -1,0 +1,38 @@
+<div class="container">
+  <h1 class="border border-dark mt-2 p-3 rounded bg-primary text-white text-center">Affichage des questions</h1>
+  {supprQuestion}
+  {modifQuestion}
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Questionnaire</th>
+        <th scope="col">Description</th>
+        <th scope="col">Reponse A</th>
+        <th scope="col">Reponse B</th>
+        <th scope="col">Reponse C</th>
+        <th scope="col">Reponse D</th>
+        <th scope="col">Bonne reponse</th>
+        <th scope="col">Modifier</th>
+        <th scope="col">Supprimer</th>
+      </tr>
+    </thead>
+    <tbody>
+     {Questions}
+    </tbody>
+  </table>
+</div>
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script>
+  
+  let supprImg =  document.querySelectorAll("img[src='delete.png']");
+  console.log(supprImg);
+  supprImg.forEach(img => {
+      img.addEventListener("click", () => {
+       alert("Voulez-vous vraiement supprimer la question");
+  
+      })    
+  })
+
+</script>
+

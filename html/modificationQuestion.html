@@ -1,0 +1,40 @@
+<div class="container">
+    <h1 class="border border-dark mt-2 p-3 rounded bg-primary text-white text-center">Modification de la question #{id}</h1>
+    <form method="POST" action="modifierQuestionBD">
+        <input type="hidden" value="{id}" name="id">
+
+        <div class="form-group">
+          <label for="idquestionnaire">Choissisez un questionnaire correspondant</label>
+          <select class="form-control" name="idquestionnaire" id="idquestionnaire">
+              {optionGroupe}
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="descriptionQuestion">Description</label>
+          <input type="text" class="form-control" id="descriptionQuestion" name="descriptionQuestion" placeholder="Entrez la description de la question" value="{descriptionQuestion}">
+        </div>
+        <div class="form-group">
+          <label for="reponseA">Reponse A</label>
+          <input type="text" class="form-control" id="reponseA" name="reponseA" placeholder="Entrez une reponse" value="{reponseA}">
+        </div>
+        <div class="form-group">
+          <label for="reponseB">Reponse B</label>
+          <input type="text" class="form-control" id="reponseB" name="reponseB" placeholder="Entrez une reponse" value="{reponseB}">
+        </div>
+        <div class="form-group">
+          <label for="reponseC">Reponse C</label>
+          <input type="text" class="form-control" id="reponseC" name="reponseC" placeholder="Entrez une reponse" value="{reponseC}">
+        </div>
+        <div class="form-group">
+          <label for="reponseD">Reponse D</label>
+          <input type="text" class="form-control" id="reponseD" name="reponseD" placeholder="Entrez une reponse" value="{reponseD}">
+        </div>
+        <div class="form-group">
+          <label for="bonneReponse">Bonne reponse</label>
+          <input type="text" class="form-control" id="bonneReponse" name="bonneReponse" placeholder="Entrez une reponse" value="{bonneReponse}">
+        </div>
+        <button type="submit" class="btn btn-primary">Valider</button>
+      </form>
+</div>
+  
+  

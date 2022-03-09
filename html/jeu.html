@@ -1,0 +1,37 @@
+<div class="container">
+    <h1 class="border border-dark mt-2 p-3 rounded bg-primary text-white text-center">Jeu de questionnaire</h1>
+   
+    <form method="GET" action="jeu.html">
+        <label class="mb-2">Questionnaire : </label>        
+        <select name="idquestionnaire" class="form-control mb-4" onchange="submit()">
+            {optionGroupe}
+        </select>
+    </form>
+   
+    <div class="border rounded p-3">
+        <h2>#{idQuestionBD} - Q{QuestionNumero} : {description}</h2>
+        <input type="hidden" name="reponse" id="reponse" value="{bonneReponse}">
+        <div class="row m-2">
+            <div class="col">
+                <button class="btn btn-primary" onclick="verification('{bonneReponse}','{reponseA}','{idQuestionnaire}','{QuestionNumero}')">Reponse A : {reponseA}</button>
+            </div>
+            <div class="col">
+                <button class="btn btn-primary" onclick="verification('{bonneReponse}','{reponseB}','{idQuestionnaire}','{QuestionNumero}')">Reponse B : {reponseB}</button>
+            </div>
+        </div>
+        <div class="row m-2">
+            <div class="col">
+                <button class="btn btn-primary" onclick="verification('{bonneReponse}','{reponseC}','{idQuestionnaire}','{QuestionNumero}')">Reponse C : {reponseC}</button>
+            </div>
+            <div class="col">
+                <button class="btn btn-primary" onclick="verification('{bonneReponse}','{reponseD}','{idQuestionnaire}','{QuestionNumero}')">Reponse D : {reponseD}</button>
+            </div>
+        </div>
+    </div> 
+    <div class="alert alert-danger mt-3 perso-hidden" role="alert">
+        Mauvaise reponse !
+    </div>
+</div>
+ 
+ 
+ 
