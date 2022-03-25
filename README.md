@@ -11,7 +11,7 @@ The app will automatically reload if you change any of the source files.
 
 <h2>Database configuration</h2>
 
-MySQL database 
+MySQL database <br>
 database name: bdqusetionnaire <br>
 database user: root<br>
 no password
