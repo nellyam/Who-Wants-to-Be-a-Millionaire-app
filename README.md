@@ -5,7 +5,7 @@ The project was developped in **NodeJS** environnment (no framework) and uses  *
 
 <h2>Development server</h2>
 Run <code>npm start</code> for a dev server. 
-Navigate to http://localhost:12345/ 
+Navigate to <code>http://localhost:12345/ </code>
 The app will automatically reload if you change any of the source files.
 
 
