@@ -4,7 +4,7 @@ The project was developped in **NodeJS** environnment (no framework) and uses  *
 
 
 <h2>Development server</h2>
-Run **npm start** for a dev server. 
+Run <code>npm start</code> for a dev server. 
 Navigate to http://localhost:12345/ 
 The app will automatically reload if you change any of the source files.
 
@@ -12,6 +12,6 @@ The app will automatically reload if you change any of the source files.
 <h2>Database configuration</h2>
 
 MySQL database <br>
-database name: bdqusetionnaire <br>
-database user: root<br>
+**database name**: bdqusetionnaire <br>
+**database user**: root<br>
 no password
